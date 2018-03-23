@@ -11,20 +11,20 @@
     <!--Хедер сайта с логотипом, меню и корзиной-->
     <header class="header">
         <div class="container">
-            <div class="header-logo">
-                <a><img src="images/nerds-logo.png" alt="Дизайн-студия Nerds"></a>
+            <div class="header-logo clearfix">
+                <a href="#"><img src="images/nerds-logo.png" alt="Дизайн-студия Nerds"></a>
             </div>
             <nav class="header-nav">
-                <ul>
-                    <li>Студия</li>
-                    <li>Клиенты</li>
-                    <li>Магазин</li>
-                    <li>Контакты</li>
+                <ul class="clearfix">
+                    <li><a href="#">Студия</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header-basket">
-                <ul>
-                    <li>Корзина</li>
+                <ul class="clearfix">
+                    <li><a href="#">Корзина</a></li>
                 </ul>
             </div>
         </div>
@@ -33,29 +33,31 @@
         <!--Экран слайдера, сразу разметила все части, чтобы потом было проще-->
         <section class="slider">
             <div class="container">
-                <div class="slide-1">
-                    <h2>Долго, дорого, скрупулезно.</h2>
-                    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                    <a href="#" class="button">Узнать больше</a>
+                <div class="slide-1 clearfix">
+                    <div class="slide-text">
+                        <b>Долго, дорого, скрупулезно.</b>
+                        <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                        <a href="#">Узнать больше</a>
+                    </div>
                     <img src="images/slide1.png" alt="Создание дизайнов">
                 </div>
-                <div class="slide-2">
-                    <h2>Любим математику как никто другой</h2>
+            </div>
+                <!--<div class="slide-2">
+                    <b>Любим математику как никто другой</b>
                     <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                     <a href="#" class="button">Узнать больше</a>
                     <img src="images/slide2.png" alt="Идеальная верстка">
                 </div>
                 <div class="slide-3">
-                    <h2>Только ночь, только хардкор</h2>
+                    <b>Только ночь, только хардкор</b>
                     <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                     <a href="#" class="slider-button">Узнать больше</a>
                     <img src="images/slide3.png" alt="Поддержка клиентов 24/7">
-                </div>
-            </div>
-        </section>
+                </div>-->
+         </section>
         <!--Экран с услугами студии-->
         <section class="services">
-            <div class="container">
+            <div class="container clearfix">
                 <div class="service-1">
                     <img src="images/illustration-1.png" alt="Веб-сайты">
                     <h3>Веб-сайты</h3>
@@ -78,64 +80,59 @@
         </section>
         <!--Экран информации о студии-->
         <section class="content">
-            <div class="container">
-                <div class="content-left">
-                    <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b></p>
-                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
-                       Работаем не покладая рук, как роботы.</p>
-                    <p class="list-title">Выполняем заказы на разработку:</p>
-                    <ul>
-                        <li>Веб-сайтов любой сложности</li>
-                        <li>Мобильных приложений для iOS и Android</li>
-                        <li>Слайдшоу и видео для корпоративных презентаций</li>
-                    </ul>
+            <div class="content-left">
+                <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b></p>
+                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
+                    Работаем не покладая рук, как роботы.</p>
+                <p class="list-title">Выполняем заказы на разработку:</p>
+                <ul>
+                    <li>Веб-сайтов любой сложности</li>
+                    <li>Мобильных приложений для iOS и Android</li>
+                    <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </div>
+            <div class="content-right">
+                <img src="images/nerds-illustration.jpg" alt="Дизайн-студия из Краснодара">
+                <div class="content-statistic">
+                    <p class="list-title">с 2004 года Любим точность во всем:</p>
+                    <dl>
+                        <dt>146%</dt>
+                        <dd>Уровень самоотдачи</dd>
+                        <dt>100%</dt>
+                        <dd>Соблюдение сроков</dd>
+                        <dt>50%</dt>
+                        <dd>Минимальная предоплата</dd>
+                    </dl>
                 </div>
-                <div class="content-right"></div>
-                    <img src="images/nerds-illustration.jpg" alt="Дизайн-студия из Краснодара">
-                    <div class="content-statistic">
-                        <p class="list-title">с 2004 года Любим точность во всем:</p>
-                        <dl>
-                            <dt>146%</dt>
-                            <dd>Уровень самоотдачи</dd>
-                            <dt>100%</dt>
-                            <dd>Соблюдение сроков</dd>
-                            <dt>50%</dt>
-                            <dd>Минимальная предоплата</dd>
-                        </dl>
-                    </div>
             </div>
         </section>
         <!--Экран с логотипами партнеров-->
         <div class="partners">
-            <div class="container">
-                <ul>
-                    <li><img src="images/logo-1.png" alt="Логотип HTML Academy"></li>
-                    <li><img src="images/logo-2.png" alt="Логотип Barbershop Borodinsky"></li>
-                    <li><img src="images/logo-3.png" alt="Логотип Pink"></li>
-                    <li><img src="images/logo-4.png" alt="Логотип Mishka"></li>
-                </ul>
-            </div>
+            <ul>
+                <li><img src="images/logo-1.png" alt="Логотип HTML Academy"></li>
+                <li><img src="images/logo-2.png" alt="Логотип Barbershop Borodinsky"></li>
+                <li><img src="images/logo-3.png" alt="Логотип Pink"></li>
+                <li><img src="images/logo-4.png" alt="Логотип Mishka"></li>
+            </ul>
         </div>
         <!--Экран с картой и адресом-->
         <div class="contacts">
-            <div class="container">
-                <div class="page-addres">
-                    <p><b>NЁRDS DESIGN STUDIO</b></p>
-                    <p>191186, Санкт-Петербург,<br>
-                        ул. Б. Конюшенная, д. 19/8<br><br>
-                        тел. +7 (812) 275-75-75</p>
-                    <a href="#" class="adress-button">Напишите нам</a>
-                </div>
-                <!--Временно помещаю картинку здесь, чтобы помнить о ней. В дальнейшем карта будет
-                интерактивна, а картинку использую в виде фона контейнера, чтобы она загружалась, даже
-                если интерактивная карта вдруг не сработает-->
-                <img src="images/google-map.jpg" alt="Офис Nerds на карте Спб">
+            <div class="page-addres">
+                <p><b>NЁRDS DESIGN STUDIO</b></p>
+                <p>191186, Санкт-Петербург,<br>
+                    ул. Б. Конюшенная, д. 19/8<br><br>
+                    тел. +7 (812) 275-75-75</p>
+                <a href="#" class="adress-button">Напишите нам</a>
             </div>
+            <!--Временно помещаю картинку здесь, чтобы помнить о ней. В дальнейшем карта будет
+            интерактивна, а картинку использую в виде фона контейнера, чтобы она загружалась, даже
+            если интерактивная карта вдруг не сработает-->
+            <img src="images/google-map.jpg" alt="Офис Nerds на карте Спб">
         </div>
     </main>
     <!--Футер страницы-->
     <footer class="footer">
-        <div class="container">
+        <div class="container clearfix">
             <div class="footer-social">
                 <ul>
                     <li><a href="#">Вконтакте</a></li>
