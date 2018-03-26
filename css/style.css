@@ -36,14 +36,12 @@ body {
     padding-bottom: 18px;
 }
 
-.header img {
+a.header-logo {
+    display: inline-block;
     width: 160px;
     height: 65px;
-    float: left;
-}
-
-a.header-logo {
-    cursor: pointer;
+    outline: 2px solid orange;
+    vertical-align: bottom;
 }
 
 a.header-logo:hover {
@@ -54,39 +52,39 @@ a.header-logo:active {
     opacity: 0.3;
 }
 
-.header li {
+.header-nav ul {
+    display: inline-block;
+    padding: 0;
+    outline: 2px solid orange;
+}
+
+.header-nav li {
     display: inline-block;
     list-style: none;
     text-transform: uppercase;
 }
 
-.header li > a {
+.header-nav li > a {
     text-decoration: none;
     color: #000000;
 }
 
-.header li > a:hover {
+.header-nav li > a:hover {
     color: #fb565a;
 }
 
-.header li > a:active {
+.header-nav li > a:active {
     color: #000000;
     opacity: 0.3;
 }
 
-.header-nav ul {
-    display: inline-block;
-    padding: 0;
-}
-
 ul.header-menu {
     width: 490px;
-    margin-top: 30px;
     margin-left: 200px;
 }
 
 ul.header-menu li {
-    margin-right: 45px;
+    margin-right: 40px;
 }
 
 ul.header-menu li:last-child {
@@ -94,10 +92,9 @@ ul.header-menu li:last-child {
 }
 
 ul.header-basket {
-    width: 100px;
     float: right;
-    margin-top: 30px;
     text-align: right;
+    margin-top: 30px;
 }
 
 .slider {
