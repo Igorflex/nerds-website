@@ -40,7 +40,6 @@ a.header-logo {
     display: inline-block;
     width: 160px;
     height: 65px;
-    outline: 2px solid orange;
     vertical-align: bottom;
 }
 
@@ -55,7 +54,6 @@ a.header-logo:active {
 .header-nav ul {
     display: inline-block;
     padding: 0;
-    outline: 2px solid orange;
 }
 
 .header-nav li {
@@ -139,6 +137,7 @@ ul.header-basket {
 
 .slider a:active {
     color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px 0 0 rgba(0, 1, 1, 0.1) inset;
 }
 
 .slide-1 img {
@@ -148,26 +147,19 @@ ul.header-basket {
     margin-right: 33px;
 }
 
-.services .container {
+.services {
     padding-bottom: 80px;
     border-bottom: 2px solid #eeeeee;
 }
 
-.service-1 {
-    float: left;
+.services-position {
+    display: inline-block;
     width: 300px;
     margin-right: 100px;
 }
 
-.service-2 {
-    float: left;
-    width: 300px;
-    margin-right: 100px;
-}
-
-.service-3 {
-    float: left;
-    width: 300px;
+.services-position:nth-child(3n) {
+    margin-right: 0;
 }
 
 .services h3 {
@@ -199,12 +191,43 @@ a.order-button {
     border-radius: 3px;
 }
 
+a.order-button:hover {
+    background-color: #e74246;
+}
+
+a.order-button:active {
+    background-color: #d7373b;
+}
+
 a.btn-green {
     background-color: #00ca74;
 }
 
+a.btn-green:hover {
+    background-color: #00bc6c;
+}
+
+a.btn-green:active {
+    background-color: #00aa62;
+}
+
 a.btn-yellow {
     background-color: #efc84a;
+}
+
+a.btn-yellow:hover {
+    background-color: #eab534;
+}
+
+a.btn-yellow:active {
+    background-color: #e5a722;
+}
+
+a.order-button:active,
+a.btn-green:active,
+a.btn-yellow:active {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px 0 0 rgba(0, 1, 1, 0.1) inset;
 }
 
 .content {
