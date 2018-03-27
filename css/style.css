@@ -307,11 +307,9 @@ a.btn-yellow:active {
 .content .container {
     padding-bottom: 76px;
     border-bottom: 2px solid #eeeeee;
-}
-
-.content img {
-    float: right;
-    outline: 2px solid green;
+    background-image: url('../images/nerds-illustration.jpg');
+    background-repeat: no-repeat;
+    background-position: 800px 0;
 }
 
 .content b {
