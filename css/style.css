@@ -97,31 +97,80 @@ ul.header-basket {
 .slider {
     background-color: #eeeeee;
     margin-bottom: 80px;
-    padding-top: 16px;
+}
+
+.slider input[type=radio] {
+    display: none;
+}
+
+.slider-display {
+    display: block;
+    width: 1160px;
+    height: 430px;
+    position: relative;
 }
 
 .slider-slide  {
     width: 1160px;
-    height: 414px;
-    padding-top: 58px;
+    height: 430px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 74px;
+    background-repeat: no-repeat;
+    display: none;
 }
 
-.first-slide {
+.slides .slider-slide:nth-child(1) {
     background-image: url('../images/slide1.png');
-    background-repeat: no-repeat;
-    background-position: 430px 0;
+    background-position: 430px 16px;
 }
 
-.second-slide {
+.slides .slider-slide:nth-child(2) {
     background-image: url('../images/slide2.png');
-    background-repeat: no-repeat;
-    background-position: 416px 0;
+    background-position: 492px 0;
 }
 
-.third-slide {
+.slides .slider-slide:nth-child(3) {
     background-image: url('../images/slide3.png');
-    background-repeat: no-repeat;
-    background-position: 416px 5px;
+    background-position: 400px 20px;
+}
+
+.slider-controls {
+    position: absolute;
+    left: 534px;
+    bottom: 92px;
+    z-index: 1000;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+#slider-btn-1:checked ~ .slider-controls label[for="slider-btn-1"],
+#slider-btn-2:checked ~ .slider-controls label[for="slider-btn-2"],
+#slider-btn-3:checked ~ .slider-controls label[for="slider-btn-3"] {
+    box-shadow:
+            0 0 0 5px #fff inset,
+            0 0 0 7px #c1c1c1 inset;
+}
+
+#slider-btn-1:checked ~ .slides .slider-slide:nth-child(1) {
+    display: block;
+}
+
+#slider-btn-2:checked ~ .slides .slider-slide:nth-child(2) {
+    display: block;
+}
+
+#slider-btn-3:checked ~ .slides .slider-slide:nth-child(3) {
+    display: block;
 }
 
 .slider b {
@@ -131,6 +180,10 @@ ul.header-basket {
     line-height: 55px;
     width: 560px;
     margin-bottom: 10px;
+}
+
+.slides .slider-slide:nth-child(3) b {
+    width: 460px;
 }
 
 .slider p {
