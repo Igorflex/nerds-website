@@ -220,18 +220,18 @@ ul.header-basket {
     border-bottom: 2px solid #eeeeee;
 }
 
-.services-position {
+.service-block {
     display: inline-block;
+    vertical-align: top;
     width: 300px;
     margin-right: 100px;
 }
 
-.services-position:nth-child(3n) {
+.service-block:nth-child(3n) {
     margin-right: 0;
 }
 
 .services h3 {
-    display: inline-block;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: bold;
