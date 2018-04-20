@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Дизайн-студия Nerds</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext" >
+    <link rel="stylesheet" href="css/style.css">
     <!--Еще нужно будет подключить файл со скриптами (карта и поп-ап)-->
 </head>
 <body>
-    <!--Хедер сайта с логотипом, меню и корзиной-->
     <header class="header">
         <nav class="header-nav container">
             <a href="#" class="header-logo"><img src="images/nerds-logo.png" alt="Дизайн-студия Nerds"></a>
@@ -18,14 +18,10 @@
                 <li><a href="#">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
-            <ul class="header-basket">
-                <li><a href="#">Корзина</a></li>
-            </ul>
+            <a href="#" class="header-basket">Корзина</a>
         </nav>
     </header>
     <main>
-        <!--Экран слайдера, разметила все части, чтобы потом было проще
-        (неактивные части слайдера пока что закомментированы)-->
         <section class="slider">
             <div class="slider-display container">
                 <input type="radio" id="slider-btn-1" name="toggle" checked>
@@ -55,7 +51,6 @@
                 </div>
             </div>
         </section>
-        <!--Экран с услугами студии-->
         <section class="services container">
             <div class="service-block">
                 <img src="images/illustration-1.png" alt="Веб-сайты">
@@ -76,8 +71,6 @@
                 <a href="#" class="order-button btn-yellow">Заказать</a>
             </div>
         </section>
-
-        <!--Экран информации о студии-->
         <section class="content">
             <div class="container clearfix">
                 <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
@@ -106,8 +99,6 @@
                 </div>
             </div>
         </section>
-
-        <!--Экран с логотипами партнеров-->
         <section class="partners">
             <div class="container">
                 <ul>
@@ -124,8 +115,7 @@
             <div class="container">
                 <div class="page-addres">
                     <b>NЁRDS DESIGN STUDIO</b>
-                    <p>191186, Санкт-Петербург,<br>
-                        ул. Б. Конюшенная, д. 19/8<br><br>
+                    <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
                         тел. +7 (812) 275-75-75</p>
                     <a href="#" class="adress-button">Напишите нам</a>
                 </div>
