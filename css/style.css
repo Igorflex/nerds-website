@@ -625,7 +625,7 @@ b.footer-promo-title {
 }
 
 .pop-up {
-    display: block;
+    display: none;
     background-color: #ffffff;
     width: 960px;
     height: 590px;
