@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Дизайн-студия Nerds</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext" >
     <link rel="stylesheet" href="css/style.css">
-    <!--Еще нужно будет подключить файл со скриптами (карта и поп-ап)-->
 </head>
 <body>
     <header class="header">
@@ -73,6 +72,7 @@
         </section>
         <section class="content">
             <div class="container clearfix">
+                <div class="nerds-logo"></div>
                 <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
                    Работаем не покладая рук, как роботы.</p>
@@ -109,11 +109,10 @@
                 </ul>
             </div>
         </section>
-
-        <!--Экран с картой и адресом-->
         <section class="contacts">
+            <iframe src="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+191186/@59.938873,30.3258192,17z/data=!4m2!3m1!1s0x4696310fca5ba729:0xea9c53d4493c879f" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="container">
-                <div class="page-addres">
+                <div class="page-address">
                     <b>NЁRDS DESIGN STUDIO</b>
                     <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
                         тел. +7 (812) 275-75-75</p>
@@ -122,22 +121,33 @@
             </div>
         </section>
     </main>
-    <!--Футер страницы-->
     <footer class="footer">
         <div class="container clearfix">
             <div class="footer-social">
                 <ul>
-                    <li><a href="#">Вконтакте</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#"><span class="vk">Вконтакте</span></a></li>
+                    <li><a href="#"><span class="fb">Facebook</span></a></li>
+                    <li><a href="#"><span class="insta">Instagram</span></a></li>
                 </ul>
             </div>
             <div class="footer-promo">
-                <p class="footer-promo-title"><b>Давайте дружить, это выгодно!</b></p>
+                <b class="footer-promo-title">Давайте дружить, это выгодно!</b>
                 <p>Скидка 10% для друзей из социальных сетей.</p>
             </div>
         </div>
     </footer>
-
+    <!--Блок с поп-апом-->
+    <div class="pop-up">
+        <button class="window-close">Закрыть</button>
+        <b>Напишите нам</b>
+        <form action="#" method="post">
+            <label>Ваше имя:</label>
+            <input type="text" name="name" id="username" placeholder="Представьтесь, пожалуйста" autocomplete="on">
+            <label>Ваш e-mail:</label>
+            <input type="email" name="e-mail" id="usermail" placeholder="Для отправки ответа" autocomplete="on"><br>
+            <label>Текст письма:</label>
+            <textarea name="text" id="usertext" placeholder="В свободной форме"></textarea>
+        </form>
+     </div>
 </body>
 </html>
