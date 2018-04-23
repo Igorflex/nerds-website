@@ -154,7 +154,7 @@ a.header-basket::before {
     position: absolute;
     left: 534px;
     bottom: 92px;
-    z-index: 1000;
+    z-index: 80;
 }
 
 .slider-controls label {
@@ -500,12 +500,10 @@ li.description {
 }
 
 .page-address b {
-    display: inline-block;
     font-size: 18px;
 }
 
 .page-address p {
-    display: inline-block;
     width: 210px;
     padding-top: 7px;
     padding-bottom: 22px;
@@ -626,8 +624,101 @@ b.footer-promo-title {
 
 .pop-up {
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #ffffff;
     width: 960px;
     height: 590px;
+    padding: 70px 100px 80px 100px;
     outline: 2px solid red;
+    z-index: 100;
+}
+
+.pop-up b {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.pop-up .window-close {
+    display: block;
+
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    outline: 2px solid green;
+    background-color: white;
+    border: 0;
+    opacity: 0.3;
+    cursor: pointer;
+
+    position: absolute;
+    right: 50px;
+}
+
+.pop-up .window-close::before,
+.pop-up .window-close::after {
+    content: "";
+    width: 5px;
+    height: 25px;
+    background-color: #fb565a;
+    position: absolute;
+    top: 10px;
+    left: 2px;
+}
+
+.pop-up .window-close::before {
+    transform: rotate(-45deg);
+}
+
+.pop-up .window-close::after {
+    transform: rotate(45deg);
+}
+
+.pop-up .window-close:hover {
+    opacity: 1;
+}
+
+.pop-up .window-close:active {
+    opacity: 0.1;
+}
+
+.pop-up form {
+    margin-top: 35px;
+}
+
+.pop-up label,
+.pop-up input {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.pop-up label {
+    font-weight: bold;
+}
+
+.pop-up input[type="text"],
+.pop-up input[type="email"],
+.pop-up textarea {
+    border: 2px solid #d7dcde;
+    padding: 10px;
+    color: #444444;
+    margin-top: 10px;
+}
+
+.pop-up input[type="text"],
+.pop-up input[type="email"] {
+    width: 360px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.pop-up textarea {
+    width: 760px;
+    height: 120px;
+}
+
+.pop-up input[type="text"] {
+    margin-right: 40px;
 }
