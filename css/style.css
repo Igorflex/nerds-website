@@ -407,20 +407,29 @@ a.btn-yellow:active {
     display: inline-block;
     list-style: none;
     width: 100px;
-    margin-left: 16px;
+    margin-right: 16px;
 }
 
-.content-right li:first-child {
-    margin-left: 0;
+.content-right li:last-child {
+    width: 70px;
+    margin-right: 0;
 }
 
 .percents {
     font-size: 46px;
     font-weight: bold;
+    position: relative;
 }
 
-sup.percents {
-    vertical-align: top;
+.percents::after {
+    content: "%";
+    width: 26px;
+    height: 26px;
+    font-size: 26px;
+    line-height: 10px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
 }
 
 li.description {
@@ -614,6 +623,7 @@ b.footer-promo-title {
 .footer-promo p {
     font-size: 16px;
     line-height: 22px;
+    margin-top: 10px;
 }
 
 .pop-up {
