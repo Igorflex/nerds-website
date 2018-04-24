@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Дизайн-студия Nerds</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext" >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="header-nav container">
+        <a href="#" class="header-logo"><img src="images/nerds-logo.png" alt="Дизайн-студия Nerds"></a>
+        <ul class="header-menu">
+            <li><a href="#studio">Студия</a></li>
+            <li><a href="#clients">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <a href="#" class="header-basket">Корзина</a>
+    </nav>
+</header>
+<main>
+
+
+    <section class="contacts" id="contact">
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.198206545723!2d30.3230833!3d59.9387942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1524578433122" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="container">
+            <div class="page-address">
+                <b>NЁRDS DESIGN STUDIO</b>
+                <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
+                    тел. +7 (812) 275-75-75</p>
+                <a href="#contact" class="adress-button" onclick="openPopup()">Напишите нам</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container clearfix">
+        <div class="footer-social">
+            <ul>
+                <li><a href="#"><span class="vk">Вконтакте</span></a></li>
+                <li><a href="#"><span class="fb">Facebook</span></a></li>
+                <li><a href="#"><span class="insta">Instagram</span></a></li>
+            </ul>
+        </div>
+        <div class="footer-promo">
+            <b class="footer-promo-title">Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+    </div>
+</footer>
+<div class="pop-up">
+    <button class="window-close" title="Закрыть" onclick="windowClose()">Закрыть</button>
+    <b>Напишите нам</b>
+    <form action="#" method="post" class="clearfix">
+        <label>Ваше имя:<br><input type="text" name="name" id="username" placeholder="Представьтесь, пожалуйста" autocomplete="on"></label>
+        <label class="right-form">Ваш e-mail:<br><input type="email" name="e-mail" id="usermail" placeholder="Для отправки ответа" autocomplete="on"></label>
+        <label>Текст письма:<br><textarea name="text" id="usertext" placeholder="В свободной форме" ></textarea></label>
+        <input type="submit" name="send-message" value="Отправить" onclick="windowClose()">
+    </form>
+</div>
+
+<script src="javascript/scripts.js"></script>
+</body>
+</html>
