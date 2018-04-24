@@ -12,10 +12,10 @@
         <nav class="header-nav container">
             <a href="#" class="header-logo"><img src="images/nerds-logo.png" alt="Дизайн-студия Nerds"></a>
             <ul class="header-menu">
-                <li><a href="#">Студия</a></li>
-                <li><a href="#">Клиенты</a></li>
+                <li><a href="#studio">Студия</a></li>
+                <li><a href="#clients">Клиенты</a></li>
                 <li><a href="#">Магазин</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
             <a href="#" class="header-basket">Корзина</a>
         </nav>
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section class="services container">
+        <section class="services container" id="studio">
             <div class="service-block">
                 <img src="images/illustration-1.png" alt="Веб-сайты">
                 <h3>Веб-сайты</h3>
@@ -99,7 +99,7 @@
                 </div>
             </div>
         </section>
-        <section class="partners">
+        <section class="partners" id="clients">
             <div class="container">
                 <ul>
                     <li><a href="#"><img src="images/logo-1.png" alt="Логотип HTML Academy"></a></li>
@@ -109,7 +109,7 @@
                 </ul>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contact">
             <iframe src="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+191186/@59.938873,30.3258192,17z/data=!4m2!3m1!1s0x4696310fca5ba729:0xea9c53d4493c879f" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="container">
                 <div class="page-address">
@@ -140,13 +140,11 @@
     <div class="pop-up">
         <button class="window-close">Закрыть</button>
         <b>Напишите нам</b>
-        <form action="#" method="post">
-            <label>Ваше имя:</label><br>
-            <input type="text" name="name" id="username" placeholder="Представьтесь, пожалуйста" autocomplete="on">
-            <label>Ваш e-mail:</label><br>
-            <input type="email" name="e-mail" id="usermail" placeholder="Для отправки ответа" autocomplete="on"><br>
-            <label>Текст письма:</label><br>
-            <textarea name="text" id="usertext" placeholder="В свободной форме" ></textarea>
+        <form action="#" method="post" class="clearfix">
+            <label>Ваше имя:<br><input type="text" name="name" id="username" placeholder="Представьтесь, пожалуйста" autocomplete="on"></label>
+            <label class="right-form">Ваш e-mail:<br><input type="email" name="e-mail" id="usermail" placeholder="Для отправки ответа" autocomplete="on"></label>
+            <label>Текст письма:<br><textarea name="text" id="usertext" placeholder="В свободной форме" ></textarea></label>
+            <input type="submit" name="send-message" value="Отправить">
         </form>
     </div>
 </body>

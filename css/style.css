@@ -175,14 +175,8 @@ a.header-basket::before {
             0 0 0 7px #c1c1c1 inset;
 }
 
-#slider-btn-1:checked ~ .slides .slider-slide:nth-child(1) {
-    display: block;
-}
-
-#slider-btn-2:checked ~ .slides .slider-slide:nth-child(2) {
-    display: block;
-}
-
+#slider-btn-1:checked ~ .slides .slider-slide:nth-child(1),
+#slider-btn-2:checked ~ .slides .slider-slide:nth-child(2),
 #slider-btn-3:checked ~ .slides .slider-slide:nth-child(3) {
     display: block;
 }
@@ -632,7 +626,7 @@ b.footer-promo-title {
     width: 960px;
     height: 590px;
     padding: 70px 100px 80px 100px;
-    outline: 2px solid red;
+    box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
     z-index: 100;
 }
 
@@ -643,25 +637,23 @@ b.footer-promo-title {
 
 .pop-up .window-close {
     display: block;
-
-    width: 22px;
-    height: 22px;
+    width: 23px;
+    height: 23px;
     font-size: 0;
-    outline: 2px solid green;
     background-color: white;
     border: 0;
     opacity: 0.3;
     cursor: pointer;
-
     position: absolute;
-    right: 50px;
+    right: 90px;
+    top: 80px;
 }
 
 .pop-up .window-close::before,
 .pop-up .window-close::after {
     content: "";
-    width: 5px;
-    height: 25px;
+    width: 25px;
+    height: 5px;
     background-color: #fb565a;
     position: absolute;
     top: 10px;
@@ -691,15 +683,13 @@ b.footer-promo-title {
 .pop-up label,
 .pop-up input {
     font-size: 16px;
-    line-height: 18px;
 }
 
 .pop-up label {
     font-weight: bold;
 }
 
-.pop-up input[type="text"],
-.pop-up input[type="email"],
+.pop-up input,
 .pop-up textarea {
     border: 2px solid #d7dcde;
     padding: 10px;
@@ -707,18 +697,61 @@ b.footer-promo-title {
     margin-top: 10px;
 }
 
-.pop-up input[type="text"],
-.pop-up input[type="email"] {
+.pop-up input:hover,
+.pop-up textarea:hover {
+    border-color: #b4b9bb;
+}
+
+.pop-up input:focus,
+.pop-up textarea:focus {
+   border-color: #000000;
+   color: #000000;
+}
+
+.pop-up input:invalid {
+    border-color: #e74246;
+    color: #e74246;
+}
+
+.pop-up input {
     width: 360px;
     height: 50px;
     margin-bottom: 30px;
 }
 
+label.right-form {
+    float: right;
+    margin-top: -24px;
+}
+
 .pop-up textarea {
     width: 760px;
     height: 120px;
+    resize: none;
 }
 
 .pop-up input[type="text"] {
     margin-right: 40px;
+}
+
+.pop-up input[type="submit"] {
+    width: 260px;
+    height: 50px;
+    padding: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #fb565a;
+    border-radius: 3px;
+    border: none;
+    margin-top: 50px;
+}
+
+.pop-up input[type="submit"]:hover {
+    background-color: #e74246;
+}
+
+.pop-up input[type="submit"]:active {
+    background-color: #d7373b;
 }
