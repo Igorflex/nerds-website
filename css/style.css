@@ -68,7 +68,7 @@ a.header-basket {
     padding-bottom: 10px;
 }
 
-header-nav li > a:hover,
+.header-nav li > a:hover,
 a.header-basket:hover {
     color: #fb565a;
 }
@@ -112,8 +112,12 @@ a.header-basket::before {
     background: url('../images/css_sprites.png') -97px -238px;
 }
 
-a.active {
+.header-nav a.active {
     border-bottom: 2px solid #fb565a;
+}
+
+.header-nav a.active:hover {
+    color: #000000;
 }
 
 .slider {
