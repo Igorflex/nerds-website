@@ -65,9 +65,10 @@ a.header-basket {
     text-decoration: none;
     color: #000000;
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
-.header-nav li > a:hover,
+header-nav li > a:hover,
 a.header-basket:hover {
     color: #fb565a;
 }
@@ -91,10 +92,13 @@ ul.header-menu li:last-child {
 }
 
 a.header-basket {
+    display: inline-block;
+    width: 115px;
     float: right;
     text-align: right;
     margin-top: 26px;
     position: relative;
+    padding-bottom: 7px;
 }
 
 a.header-basket::before {
@@ -103,9 +107,13 @@ a.header-basket::before {
     width: 15px;
     height: 15px;
     position: absolute;
-    left: -38px;
+    left: 0;
     top: 5px;
     background: url('../images/css_sprites.png') -97px -238px;
+}
+
+a.active {
+    border-bottom: 2px solid #fb565a;
 }
 
 .slider {
