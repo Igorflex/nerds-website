@@ -118,7 +118,7 @@
                     <b>NЁRDS DESIGN STUDIO</b>
                     <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
                         тел. +7 (812) 275-75-75</p>
-                    <a href="#" class="adress-button">Напишите нам</a>
+                    <a href="#contact" class="adress-button" onclick="openPopup()">Напишите нам</a>
                 </div>
             </div>
         </section>
@@ -138,16 +138,17 @@
             </div>
         </div>
     </footer>
-    <!--Блок с поп-апом-->
     <div class="pop-up">
-        <button class="window-close">Закрыть</button>
+        <button class="window-close" title="Закрыть" onclick="windowClose()">Закрыть</button>
         <b>Напишите нам</b>
         <form action="#" method="post" class="clearfix">
             <label>Ваше имя:<br><input type="text" name="name" id="username" placeholder="Представьтесь, пожалуйста" autocomplete="on"></label>
             <label class="right-form">Ваш e-mail:<br><input type="email" name="e-mail" id="usermail" placeholder="Для отправки ответа" autocomplete="on"></label>
             <label>Текст письма:<br><textarea name="text" id="usertext" placeholder="В свободной форме" ></textarea></label>
-            <input type="submit" name="send-message" value="Отправить">
+            <input type="submit" name="send-message" value="Отправить" onclick="windowClose()">
         </form>
     </div>
+
+    <script src="javascript/scripts.js"></script>
 </body>
 </html>
