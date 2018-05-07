@@ -120,6 +120,19 @@ a.header-basket::before {
     color: #000000;
 }
 
+.catalogue-title {
+    background-color: #eeeeee;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.catalogue-title h1 {
+    font-size: 55px;
+    font-family: Roboto, sans-serif;
+    line-height: 55px;
+    text-align: center;
+}
+
 .slider {
     background-color: #eeeeee;
     margin-bottom: 80px;
@@ -776,4 +789,182 @@ label.right-form {
 
 .pop-up input[type="submit"]:active {
     background-color: #d7373b;
+}
+
+.catalogue-content ul {
+    padding: 0;
+}
+
+.catalogue-content li {
+    list-style: none;
+}
+
+.catalogue-content b {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.range-filter {
+    margin-top: 55px;
+}
+
+.catalogue-filter {
+    width: 260px;
+    float: left;
+    padding-top: 50px;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.range-controls .scale {
+    margin-top: 39px;
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.range-controls .bar {
+    height: 2px;
+    background-color: #00ca74;
+}
+
+.range-controls .toggle {
+    box-sizing: content-box;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .max-toggle {
+    left: 160px;
+}
+
+.price-controls {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 22px;
+    position: relative;
+    margin-bottom: 115px;
+}
+
+.price-controls input {
+    width: 80px;
+    border: none;
+    padding: 8px 10px;
+    margin-left: 10px;
+    background: #eeeeee;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.price-controls label {
+    position: absolute;
+}
+
+label.min-price {
+    left: 0;
+}
+
+label.max-price {
+    right: 0;
+}
+
+.catalogue-items {
+    width: 760px;
+    float: right;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+ul.sort,
+ul.items,
+ul.pages {
+    font-size: 0;
+}
+
+ul.sort > li,
+ul.items > li,
+ul.pages > li {
+    display: inline-block;
+}
+
+ul.sort {
+    float: right;
+    margin-right: 100px;
+}
+
+ul.sort > li {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.sort a {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul.sort > li:last-child {
+    margin-right: 0;
+}
+
+ul.items > li,
+ul.pages > li {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+ul.items {
+    margin-top: 55px;
+}
+
+ul.items > li {
+    margin-right: 40px;
+    margin-bottom: 35px;
+}
+
+ul.items > li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.pages a {
+    display: block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    padding: 13px;
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
+    margin-right: 10px;
+    margin-top: 60px;
+}
+
+.pages a.active-page {
+    background-color: #ffffff;
+}
+
+.pages a.next-page {
+    width: 260px;
 }
