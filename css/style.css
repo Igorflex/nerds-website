@@ -978,7 +978,8 @@ a.active-sort {
     border-top-color: rgba(0, 0, 0, 0.6);
 }
 
-.arrow:active {
+.arrow:active,
+.active-arrow {
     border-top-color: rgba(0, 0, 0, 1);
 }
 
