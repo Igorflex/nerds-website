@@ -21,12 +21,12 @@
     </nav>
 </header>
 <main>
-    <section class="catalogue-title">
+    <section class="shop-title">
         <div class="container">
             <h1>Магазин готовых шаблонов</h1>
         </div>
     </section>
-    <section class="catalogue-content">
+    <section class="catalogue">
         <div class="container clearfix">
             <aside class="catalogue-filter">
                 <b>Стоимость:</b>
@@ -46,28 +46,29 @@
                 <b>Сетка:</b>
                 <div class="grid">
                     <input type="radio" id="adaptive" name="radio-filter" checked>
-                    <label for="adaptive">Адаптивная</label>
+                    <label for="adaptive">Адаптивная <span></span></label>
                     <input type="radio" id="fixed" name="radio-filter">
-                    <label for="fixed">Фиксированная</label>
-                    <input type="radio" id="rubber" name="radio-filter">
-                    <label for="rubber">Резиновая</label>
+                    <label for="fixed">Фиксированная <span></span></label>
+                    <input type="radio" id="responsive" name="radio-filter">
+                    <label for="responsive">Резиновая <span></span></label>
+
                 </div>
                 <b>Особенности:</b>
                 <div class="specials">
-                    <input type="checkbox" value="slider" id="slider">
-                    <label for="slider">Слайдер</label>
+                    <input type="checkbox" value="slider" id="slider" checked>
+                    <label for="slider">Слайдер <span></span></label>
                     <input type="checkbox" value="advantages" id="advantages">
-                    <label for="advantages">Блок преимуществ</label>
-                    <input type="checkbox" value="news" id="news">
-                    <label for="news">Новости</label>
+                    <label for="advantages">Блок преимуществ <span></span></label>
+                    <input type="checkbox" value="news" id="news" checked>
+                    <label for="news">Новости <span></span></label>
                     <input type="checkbox" value="gallery" id="gallery">
-                    <label for="gallery">Галерея</label>
+                    <label for="gallery">Галерея <span></span></label>
                     <input type="checkbox" value="basket" id="basket">
-                    <label for="basket">Корзина</label>
+                    <label for="basket">Корзина <span></span></label>
                 </div>
                 <button class="filter-show">Показать</button>
             </aside>
-            <div class="shop">
+            <div class="catalogue-content">
                 <b>Сортировать:</b>
                 <ul class="sort">
                     <li><a href="#" class="active-sort">По цене</a></li>
@@ -138,6 +139,7 @@
                     <li><a href="#">3</a></li>
                     <li><a href="#" class="next-page">Следующая</a></li>
                 </ul>
+            </div>
         </div>
     </section>
     <section class="contacts" id="contact">

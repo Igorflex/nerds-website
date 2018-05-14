@@ -120,13 +120,13 @@ a.header-basket::before {
     color: #000000;
 }
 
-.catalogue-title {
+.shop-title {
     background-color: #eeeeee;
     padding-top: 40px;
     padding-bottom: 70px;
 }
 
-.catalogue-title h1 {
+.shop-title h1 {
     font-size: 55px;
     font-family: Roboto, sans-serif;
     line-height: 55px;
@@ -591,6 +591,7 @@ a.adress-button:active {
     background-position: center;
     z-index: 5;
     position: relative;
+    transition-duration: 0.5s;
 }
 
 .footer-social span {
@@ -623,6 +624,7 @@ a.adress-button:active {
 
 .footer-social a:hover {
     background-color: #e74246;
+    transition-duration: 0.5s;
 }
 
 .footer-social a:active {
@@ -791,15 +793,15 @@ label.right-form {
     background-color: #d7373b;
 }
 
-.catalogue-content ul {
+.catalogue ul {
     padding: 0;
 }
 
-.catalogue-content li {
+.catalogue li {
     list-style: none;
 }
 
-.catalogue-content b {
+.catalogue b {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: bold;
@@ -897,7 +899,7 @@ label.max-price {
 }
 
 .specials {
-    width: 180px;
+    width: 190px;
     margin-top: 10px;
     margin-bottom: 40px;
 }
@@ -908,20 +910,24 @@ label.max-price {
     cursor: pointer;
     line-height: 40px;
     font-size: 16px;
-    white-space: nowrap;
     vertical-align: middle;
 }
 
-.grid label::before,
-.specials label::before {
-    content: "";
-    display: block;
-    float: left;
+.grid span,
+.specials span {
+    display: inline-block;
     background-repeat: no-repeat;
     opacity: 0.4;
+    cursor: pointer;
+    float: left;
 }
 
-.grid label::before {
+.grid label:hover > span,
+.specials label:hover > span {
+    opacity: 1;
+}
+
+.grid span {
     margin-top: 5px;
     width: 25px;
     height: 25px;
@@ -929,7 +935,7 @@ label.max-price {
     background-image: url("../images/catalogue/radio-off.png");
 }
 
-.specials label::before {
+.specials span {
     margin-top: 10px;
     width: 27px;
     height: 23px;
@@ -937,10 +943,28 @@ label.max-price {
     background-image: url("../images/catalogue/checkbox-off.png");
 }
 
-#adaptive:checked ~ .grid label[for="adaptive"],
-#fixed:checked ~ .grid label[for="fixed"],
-#rubber:checked ~ .grid label[for="rubber"] {
+#adaptive:checked ~ label[for="adaptive"] > span,
+#fixed:checked ~ label[for="fixed"] > span,
+#responsive:checked ~ label[for="responsive"] > span {
     background-image: url("../images/catalogue/radio-on.png");
+}
+
+#slider:checked ~ label[for="slider"] > span,
+#advantages:checked ~ label[for="advantages"] > span,
+#news:checked ~ label[for="news"] > span,
+#gallery:checked ~ label[for="gallery"] > span,
+#basket:checked ~ label[for="basket"] > span {
+    background-image: url("../images/catalogue/checkbox-on.png");
+}
+
+input[type="radio"]:disabled ~ label,
+input[type="checkbox"]:disabled ~ label {
+    opacity: 0.3;
+}
+
+input[type="radio"]:disabled ~ label + span,
+input[type="checkbox"]:disabled ~ label + span {
+    opacity: 0.1;
 }
 
 button.filter-show {
@@ -964,14 +988,14 @@ button.filter-show:active {
     box-shadow: 0 3px 0 0 #bfbfbf inset;
 }
 
-.shop {
+.catalogue-content {
     width: 760px;
     float: right;
     padding-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
 
-.shop b {
+.catalogue-content b {
     text-transform: uppercase;
 }
 
@@ -1106,6 +1130,7 @@ a.active-sort {
     padding-right: 60px;
     padding-top: 30px;
     padding-bottom: 40px;
+    transition-duration: 0.5s;
 }
 
 .item:hover {
@@ -1154,7 +1179,7 @@ a.active-sort {
 
 ul.pages {
     display: inline-block;
-    line-height: 50px;
+    line-height: 48px;
     padding: 0;
     margin-top: 25px;
 }
