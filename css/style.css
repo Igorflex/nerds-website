@@ -943,6 +943,7 @@ label.max-price {
     background-image: url("../images/catalogue/checkbox-off.png");
 }
 
+#all-items:checked ~ label[for="all-items"] > span,
 #adaptive:checked ~ label[for="adaptive"] > span,
 #fixed:checked ~ label[for="fixed"] > span,
 #responsive:checked ~ label[for="responsive"] > span {
@@ -1072,7 +1073,7 @@ span.arrow-up {
 }
 
 .sort button:active > span.arrow,
-.sort button:active > span.active-arrow {
+span.active-arrow {
     border-top-color: rgba(0, 0, 0, 1);
 }
 
@@ -1085,11 +1086,17 @@ span.arrow-up {
     margin-top: 50px;
     padding: 0;
     font-size: 0;
+    text-align: justify;
+}
+
+.catalogue-items:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
 }
 
 .catalogue-item {
     display: inline-block;
-    margin-right: 40px;
     margin-bottom: 25px;
     margin-top: 0;
     width: 360px;
@@ -1100,10 +1107,6 @@ span.arrow-up {
     overflow: hidden;
     position: relative;
     z-index: 5;
-}
-
-.catalogue-item:nth-of-type(even) {
-    margin-right: 0;
 }
 
 .catalogue-item img {
@@ -1186,6 +1189,12 @@ span.arrow-up {
 .item-description a:active {
     background-color: #d7373b;
     box-shadow: 0 3px 0 0 rgba(0, 1, 1, 0.1) inset;
+}
+
+.nothing-found {
+    width: 760px;
+    display: none;
+    text-align: center;
 }
 
 ul.pager {

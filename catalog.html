@@ -29,45 +29,45 @@
     <section class="catalogue">
         <div class="container clearfix">
             <aside class="catalogue-filter">
-                <form method="get" action="#">
-                    <b>Стоимость:</b>
-                    <div class="range-filter">
-                        <div class="range-controls">
-                            <div class="scale">
-                                <div style="width: 70%" class="bar"></div>
-                            </div>
-                            <div class="toggle min-toggle"></div>
-                            <div class="toggle max-toggle"></div>
+                <b>Стоимость:</b>
+                <div class="range-filter">
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div style="width: 70%" class="bar"></div>
                         </div>
-                        <div class="price-controls">
-                            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                            <label class="max-price">до <input type="text" name="max-price" value="15 000"></label>
-                        </div>
+                        <div class="toggle min-toggle"></div>
+                        <div class="toggle max-toggle"></div>
                     </div>
-                    <b>Сетка:</b>
-                    <div class="grid">
-                        <input type="radio" id="adaptive" name="radio-filter" checked>
-                        <label for="adaptive">Адаптивная <span></span></label>
-                        <input type="radio" id="fixed" name="radio-filter">
-                        <label for="fixed">Фиксированная <span></span></label>
-                        <input type="radio" id="responsive" name="radio-filter">
-                        <label for="responsive">Резиновая <span></span></label>
+                    <div class="price-controls">
+                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                        <label class="max-price">до <input type="text" name="max-price" value="15 000"></label>
                     </div>
-                    <b>Особенности:</b>
-                    <div class="specials">
-                        <input type="checkbox" value="slider" id="slider" checked>
-                        <label for="slider">Слайдер <span></span></label>
-                        <input type="checkbox" value="advantages" id="advantages">
-                        <label for="advantages">Блок преимуществ <span></span></label>
-                        <input type="checkbox" value="news" id="news" checked>
-                        <label for="news">Новости <span></span></label>
-                        <input type="checkbox" value="gallery" id="gallery">
-                        <label for="gallery">Галерея <span></span></label>
-                        <input type="checkbox" value="basket" id="basket">
-                        <label for="basket">Корзина <span></span></label>
-                    </div>
-                    <button name="show" value="Показать" type="submit" class="filter-show" onsubmit="showSelected()">Показать</button>
-                </form>
+                </div>
+                <b>Сетка:</b>
+                <div class="grid">
+                    <input type="radio" id="all-items" name="radio-filter" checked>
+                    <label for="all-items">Любая <span></span></label>
+                    <input type="radio" id="adaptive" name="radio-filter">
+                    <label for="adaptive">Адаптивная <span></span></label>
+                    <input type="radio" id="fixed" name="radio-filter">
+                    <label for="fixed">Фиксированная <span></span></label>
+                    <input type="radio" id="responsive" name="radio-filter">
+                    <label for="responsive">Резиновая <span></span></label>
+                </div>
+                <b>Особенности:</b>
+                <div class="specials">
+                    <input type="checkbox" value="slider" id="slider">
+                    <label for="slider">Слайдер <span></span></label>
+                    <input type="checkbox" value="advantages" id="advantages">
+                    <label for="advantages">Блок преимуществ <span></span></label>
+                    <input type="checkbox" value="news" id="news">
+                    <label for="news">Новости <span></span></label>
+                    <input type="checkbox" value="gallery" id="gallery">
+                    <label for="gallery">Галерея <span></span></label>
+                    <input type="checkbox" value="basket" id="basket">
+                    <label for="basket">Корзина <span></span></label>
+                </div>
+                <button name="show" value="Показать" class="filter-show" onclick="showSelected()">Показать</button>
             </aside>
             <div class="catalogue-content">
                 <b>Сортировать:</b>
