@@ -1089,22 +1089,11 @@ span.arrow {
 }
 
 span.arrow-up {
-    display: inline-block;
-    border-top: none;
-    border-bottom: 10px solid rgba(0, 0, 0, 0.3);
+    transform: rotate(180deg);
 }
 
-.sort button:hover > span.arrow-up {
-    border-bottom-color: rgba(0, 0, 0, 0.6);
-}
-
-.sort button:active > span.arrow,
 span.active-arrow {
     border-top-color: rgba(0, 0, 0, 1);
-}
-
-.sort button:active > span.arrow-up {
-    border-bottom-color: rgba(0, 0, 0, 1);
 }
 
 .catalogue-items {
