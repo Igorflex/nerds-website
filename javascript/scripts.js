@@ -1,4 +1,3 @@
-/* Modal window open/close function */
 var popup = document.querySelector('.pop-up');
 var adressButton = document.getElementById('adress-button');
 var closeButton = document.getElementById('close-button');

@@ -978,7 +978,7 @@ label.max-price {
     background-image: url("../images/catalogue/radio-on.png");
 }
 
-#slider:checked ~ label[for="slider"] > span,
+#with-slider:checked ~ label[for="with-slider"] > span,
 #advantages:checked ~ label[for="advantages"] > span,
 #news:checked ~ label[for="news"] > span,
 #gallery:checked ~ label[for="gallery"] > span,
