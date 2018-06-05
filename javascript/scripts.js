@@ -34,8 +34,11 @@ var responsiveFilter = document.getElementById('responsive');
 var responsiveItem = document.getElementsByClassName('responsive-item');
 var fixedFilter = document.getElementById('fixed');
 var fixedItem = document.getElementsByClassName('fixed-item');
+var showButton = document.getElementById('filter-show');
 
-function showSelected() {
+showButton.addEventListener("click", showSelected);
+
+function showSelected () {
     Object.values(allItems).map(function(element) {
         element.style.display = 'none';
     });
