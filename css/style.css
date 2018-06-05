@@ -546,7 +546,7 @@ li.description {
     line-height: 18px;
 }
 
-a.adress-button {
+button.adress-button {
     display: block;
     padding: 14px;
     width: 220px;
@@ -557,13 +557,14 @@ a.adress-button {
     text-align: center;
     background-color: #fb565a;
     border-radius: 3px;
+    border: none;
 }
 
-a.adress-button:hover {
+button.adress-button:hover {
     background-color: #e74246;
 }
 
-a.adress-button:active {
+button.adress-button:active {
     background-color: #d7373b;
 }
 
@@ -668,7 +669,7 @@ b.footer-promo-title {
 }
 
 .pop-up {
-    display: none;
+    display: block;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -682,6 +683,10 @@ b.footer-promo-title {
     -webkit-box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
     box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
     z-index: 100;
+}
+
+.pop-up-hidden {
+    display: none;
 }
 
 .pop-up b {
